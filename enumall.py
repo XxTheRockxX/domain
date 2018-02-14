@@ -87,9 +87,9 @@ def run_recon(domains, bruteforce):
                    "recon/domains-vulnerabilities/xssed",
                    "recon/domains-vulnerabilities/xssposed",
                    "recon/domains-vulnerabilities/ghdb",
-                   "recon/companies-multi/github_miner",
+                   #"recon/companies-multi/github_miner",
                    "recon/hosts-hosts/reverse_resolve",
-                   "recon/repositories-vulnerabilities/github_dorks",
+                   #"recon/repositories-vulnerabilities/github_dorks",
                    "recon/hosts-hosts/resolve"
 
                    ]
