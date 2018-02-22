@@ -125,7 +125,7 @@ if args.runAltDns and not altDnsPath:
     print "Error: no altDns path specified, please download from: https://github.com/infosec-au/altdns"
     exit(0)
 
-domainList = ["centrify.com"]
+domainList = []
 
 if args.domains:
     domainList+=args.domains
