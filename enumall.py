@@ -71,25 +71,24 @@ def run_recon(domains, bruteforce):
     #reconb.onecmd("NAMESERVER={}".format(dns_resolver_ip))
     module_list = ["recon/domains-hosts/bing_domain_web",
                    "recon/domains-hosts/shodan_hostname",
-                   "recon/companies-multi/github_miner",
-				   "recon/domains-hosts/google_site_web",
-				   "recon/domains-hosts/netcraft",
+                   "recon/domains-hosts/google_site_web",
                    "recon/domains-hosts/shodan_hostname",
-                   "recon/domains-hosts/threatcrowd",
-                   "recon/domains-hosts/hackertarget",
+                   "recon/domains-hosts/certificate_transparency",
+                   #"recon/domains-hosts/netcraft",
+                   #"recon/domains-hosts/threatcrowd",
+                   #"recon/domains-hosts/hackertarget",
                    "recon/domains-hosts/builtwith",
                    "recon/domains-hosts/mx_spf_ip",
                    "recon/netblocks-hosts/shodan_net",
-                   "recon/repositories-vulnerabilities/github_dorks",
                    "recon/domains-hosts/google_site_api",
                    "recon/netblocks-companies/whois_orgs",
                    "recon/domains-vulnerabilities/punkspider",
                    "recon/domains-vulnerabilities/xssed",
                    "recon/domains-vulnerabilities/xssposed",
                    "recon/domains-vulnerabilities/ghdb",
-                   #"recon/companies-multi/github_miner",
                    "recon/hosts-hosts/reverse_resolve",
-                   #"recon/repositories-vulnerabilities/github_dorks",
+                   "recon/repositories-vulnerabilities/gists_search",
+                   "recon/companies-multi/github_miner",
                    "recon/hosts-hosts/resolve"
 
                    ]
@@ -126,7 +125,7 @@ if args.runAltDns and not altDnsPath:
     print "Error: no altDns path specified, please download from: https://github.com/infosec-au/altdns"
     exit(0)
 
-domainList = []
+domainList = ["centrify.com"]
 
 if args.domains:
     domainList+=args.domains
